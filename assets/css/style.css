@@ -1,0 +1,384 @@
+@import url(menu.css);
+
+/* GENERAL */
+body{
+    font-family: 'Oswald', sans-serif;;
+}
+
+:root {
+    --white: white;
+    --black: black;
+    --grey: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+nav#haut {
+    width: 100%;
+    min-height: 38px;
+}
+
+nav#haut>ul.service {
+    list-style: none;
+}
+
+nav#haut>ul.service>li {
+    float: left;
+    text-indent: -9000px;
+}
+
+nav#haut>ul.service>li>a {
+    display: block;
+    text-decoration: none;
+    height: 38px;
+}
+
+nav#haut>ul.service>li#nk>a {
+    width: 110px;
+    background: url(../images/nikeplus.gif) 0 0 no-repeat
+}
+
+nav#haut>ul.service>li#jd>a {
+    width: 80px;
+    background: url(../images/jordan.gif) 0 0 no-repeat;
+}
+
+nav#haut>ul.service>li#hu>a {
+    width: 108px;
+    background: url(../images/hurley.gif) 0 0 no-repeat;
+}
+
+nav#haut>ul.service>li#cs>a {
+    width: 131px;
+    background: url(../images/converse.gif) 0 0 no-repeat;
+}
+
+header+figure {
+    width: 100%;
+}
+
+header+figure figcaption{
+    text-align: center;
+    background: var(--black);
+    color: var(--white);
+    font-size: 20px;
+}
+
+figure>img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* MAIN  */
+#canvas{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#canvas p:first-child{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#canvas p:last-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+}
+
+.btn:hover{
+    box-shadow: 0px 8px 25px var(--grey);
+    background: var(--grey);
+    transition: 1s;
+}
+
+#photos div{
+    width: 500px;
+}
+
+#photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#photos figcaption{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#photos p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+#af1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#af1 p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#af1 p:last-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#container{
+    background-image: url('../images/texture.gif');
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container figure img{
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+/* FOOTER */
+footer{
+    height: 100%;
+    color: var(--grey);
+    background: var(--black);
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer span{
+    color: var(--white);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer figure{
+    width: 100px;
+    min-width: 100px;
+    display: block;
+    margin: auto;
+}
+
+#img{
+    border-top: 1px solid var(--white);
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#img img{
+    margin-top: 0px;
+}
+
+#reseaux {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+#reseaux a i{
+    font-size: 30px;
+    color: var(--grey);
+    margin-right: 15px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:2000px) {
+    figure>img{
+        margin-top: 85px;
+    }
+}
+@media screen and (min-width:821px) and (max-width:1035px) {
+    #photos div{
+        width: 400px;
+    }
+
+    .btn{
+        width:250px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:820px) {
+    #photos div{
+        width: 350px;
+    }
+
+    .btn{
+        width:200px;
+    }
+}
+@media screen and (max-width:800px){
+    #container figure img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:700px){
+    #container figure img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:500px){
+    #container figure img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:400px){
+    #container figure img{
+        padding: 5px;
+        width: 280px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        top: 0;
+    }
+    header+figure {
+        display: none;
+    }
+    #canvas{
+        margin-top: 100px;
+    }
+    #canvas p:first-child{
+        font-size: 24px;
+    }
+    #canvas p:last-child{
+        font-size: 14px;
+    }
+    #btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .btn{
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    #photos figcaption{
+        font-size: 18px;
+    }
+    #photos p{
+        font-size: 14px;
+    }
+    #af1{
+        margin-top: 10px;
+    }
+    #af1 p:first-child{
+        font-size: 18px;
+    }
+    #af1 p:last-child{
+        font-size: 14px;
+    }
+    footer{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:515px) {
+    #photos div{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #photos div{
+        width: 300px;
+    }
+    #canvas{
+        margin-top: 150px;
+    }
+    #canvas p:first-child{
+        font-size: 22px;
+    }
+    #canvas p:last-child{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    #photos figcaption{
+        font-size: 16px;
+    }
+    #photos p{
+        font-size: 12px;
+    }
+    #af1 p:first-child{
+        font-size: 16px;
+    }
+    #af1 p:last-child{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:310px) {
+    #photos div{
+        width: 250px;
+    }
+    .btn{
+        width: 250px;
+    }
+}
+@media screen and (min-width: 980px){
+    #container figure img{
+        width: 325px;
+    }
+    .container iframe{
+        width: 90%;
+    }
+    .container div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:978px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container>div{
+        margin-bottom: 20px;
+    }
+    .container iframe{
+        width: 70%;
+    }
+}
